@@ -12,11 +12,12 @@
       <meta name="format-detection" content="email=no"/>
     </mj-raw>
     <mj-attributes>
-      <mj-divider padding="5px 0" align="left" width="20%" border-width="5px" border-style="solid" border-color="#AA3E17"></mj-divider>
+      <mj-divider padding="5px 0" width="100%" padding-right="80%" border-width="5px" border-style="solid" border-color="#AA3E17"></mj-divider>
       <mj-all font-family="Roboto, Arial, Helvetica, sans-serif"/>
       <mj-class name="H28-300" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="28px" font-weight="300" line-height="30px"/>
       <mj-class name="H20-700" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="20px" font-weight="700" line-height="24px"/>
       <mj-class name="H14-900" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="14px" font-weight="900" line-height="18px"/>
+      <mj-class name="T16-700" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="16px" font-weight="700" line-height="20px"/>
       <mj-class name="T16-400" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="16px" font-weight="400" line-height="20px"/>
       <mj-class name="T16-300" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="16px" font-weight="300" line-height="20px"/>
       <mj-class name="T12-300" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="12px" font-weight="300" line-height="16px"/>
@@ -113,34 +114,37 @@
         </mj-column>
       </mj-section>
     </mj-wrapper>
-    <mj-section background-color="#EDF2F7" padding-left="17px" padding-right="17px">
-      <mj-column width="50%" padding="8px">
-        <mj-image padding="0" width="480px" fluid-on-mobile="true" target="_blank" src="https://i.ibb.co/4RGmqBny/three.png" href="https://ecosup-commerce.fr/semaine-regroupement-immersion-et-decouvertes-bts-mco" alt="Semaine de regroupement: immersion et découvertes pour les BTS MCO"/>
-      </mj-column>
-      <mj-column width="50%" padding="8px">
-        <mj-text padding="0" align="left" mj-class="H14-900 cO" text-transform="uppercase">BTS MCO</mj-text>
-        <mj-text padding="0" align="left" mj-class="H20-700 cOF">Validez vos choix Parcoursup sans engagement&nbsp;!</mj-text>
-      </mj-column>
-    </mj-section>
-    <mj-section background-color="#EDF2F7" padding-left="17px" padding-right="17px">
-      <mj-column>
-        <mj-text padding="0" mj-class="T16-300 c">Bonne nouvelle pour les futurs étudiants&nbsp;! Saviez-vous que valider un choix sur Parcoursup ne vous engage pas définitivement&nbsp;? </mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">En confirmant vos vœux, vous ouvrez simplement la porte aux échanges avec les écoles et les entreprises, notamment si vous visez une formation en alternance.</mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">Pourquoi c'est important&nbsp;?</mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">Vous permettez aux établissements de vous contacter et de vous accompagner.</mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">Vous augmentez vos chances de trouver une entreprise rapidement.</mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">Vous gardez la liberté de choix jusqu'aux réponses définitives.</mj-text>
-      </mj-column>
-      <mj-column> 
-        <mj-text padding="0" mj-class="T16-300 c">Ne tardez pas&nbsp;! Les campagnes d'alternance sont en pleine effervescence, c'est le moment de saisir votre opportunité. Validez vos choix dès maintenant&nbsp;! </mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">Nos conseils pour ne rien oublier&nbsp;:</mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">Vérifiez que toutes les rubriques sont complétées,</mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">Soignez votre lettre de motivation et mettez en avant vos expériences,</mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">Ajoutez les pièces complémentaires demandées par certaines formations,</mj-text>
-        <mj-text padding="0" mj-class="T16-300 c">Confirmez vos vœux pour qu'ils soient transmis aux établissements,</mj-text>
-        <mj-text align="right" mj-class="LP14-700"><a href="https://ecosup-commerce.fr/semaine-regroupement-immersion-et-decouvertes-bts-mco" style="color:#EC6608;text-decoration:none;" target="_blank">Lire la suite...</a></mj-text>
-      </mj-column>
-    </mj-section>
+    <mj-wrapper padding="20px 17px">
+      <mj-section padding="0" direction="rtl">
+        <mj-column width="50%" padding="8px" vertical-align="middle">
+          <mj-image padding="0" width="480px" fluid-on-mobile="true" target="_blank" src="https://i.ibb.co/4RGmqBny/three.png" href="https://ecosup-commerce.fr/semaine-regroupement-immersion-et-decouvertes-bts-mco" alt="Semaine de regroupement: immersion et découvertes pour les BTS MCO"/>
+        </mj-column>
+        <mj-column width="50%" padding="8px" vertical-align="middle">
+          <mj-divider></mj-divider>
+          <mj-text padding="0" align="left" mj-class="H28-300 cO">Validez vos choix Parcoursup sans engagement&nbsp;!</mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0">
+        <mj-column width="50%" padding="8px">
+          <mj-text padding="0" mj-class="T16-300 c">Bonne nouvelle pour les futurs étudiants&nbsp;! <span style="font-weight:700;color:#2D3748;">Saviez-vous que valider un choix sur Parcoursup ne vous engage pas définitivement&nbsp;?</span></mj-text>
+          <mj-text padding="5px 0" mj-class="T16-300 c">En confirmant vos vœux, vous ouvrez simplement la porte aux échanges avec les écoles et les entreprises, notamment si vous visez une formation en alternance.</mj-text>
+          <mj-text padding="10px 10px 2.5px 10px" container-background-color="#dce6ef" mj-class="T16-700 cB">Pourquoi c'est important&nbsp;?</mj-text>
+          <mj-text padding="2.5px 10px" container-background-color="#dce6ef" mj-class="T16-300 c"><span style="color:#EC6608;">&#9632;</span> Vous permettez aux établissements de vous contacter et de vous accompagner.</mj-text>
+          <mj-text padding="2.5px 10px" container-background-color="#dce6ef" mj-class="T16-300 c"><span style="color:#EC6608;">&#9632;</span> Vous augmentez vos chances de trouver une entreprise rapidement.</mj-text>
+          <mj-text padding="2.5px 10px 10px 10px" container-background-color="#dce6ef" mj-class="T16-300 c"><span style="color:#EC6608;">&#9632;</span> Vous gardez la liberté de choix jusqu'aux réponses définitives.</mj-text>
+        </mj-column>
+        <mj-column width="50%" padding="8px">
+          <mj-text padding="0" mj-class="T16-300 c"><span style="font-weight:700;color:#2D3748;">Ne tardez pas&nbsp;!</span> Les campagnes d'alternance sont en pleine effervescence, c'est le moment de saisir votre opportunité. <span style="color:#2D3748;font-weight:700;">Validez vos choix dès maintenant&nbsp;!</span></mj-text>
+          <mj-text padding="10px 10px 2.5px 10px" container-background-color="#dce6ef" mj-class="T16-700 cB">Nos conseils pour ne rien oublier&nbsp;:</mj-text>
+          <mj-text padding="2.5px 10px" container-background-color="#dce6ef" mj-class="T16-300 c"><span style="color:#EC6608;">&#9632;</span> Vérifiez que toutes les rubriques sont complétées,</mj-text>
+          <mj-text padding="2.5px 10px" container-background-color="#dce6ef" mj-class="T16-300 c"><span style="color:#EC6608;">&#9632;</span> Soignez votre lettre de motivation et mettez en avant vos expériences,</mj-text>
+          <mj-text padding="2.5px 10px" container-background-color="#dce6ef" mj-class="T16-300 c"><span style="color:#EC6608;">&#9632;</span> Ajoutez les pièces complémentaires demandées par certaines formations,</mj-text>
+          <mj-text padding="2.5px 10px 10px 10px" container-background-color="#dce6ef" mj-class="T16-700 cB"><span style="color:#EC6608;">&#9632;</span> Confirmez vos vœux pour qu'ils soient transmis aux établissements,</mj-text>
+          <mj-text padding="5px 0" mj-class="T10-300 c" font-style="italic">Source : Parcoursup - Guide officiel 2024</mj-text>
+          <mj-text align="right" mj-class="LP14-700"><a href="https://www.parcoursup.gouv.fr/candidater-sur-parcoursup/nos-conseils-pour-completer-votre-dossier-et-confirmer-vos-voeux-1631" style="color:#EC6608;text-decoration:none;" target="_blank">En savoir plus...</a></mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
     <mj-section padding-left="17px" padding-right="17px" direction="rtl">
       <mj-column width="50%" padding="8px">
         <mj-image padding="0" width="480px" fluid-on-mobile="true" target="_blank" src="https://i.ibb.co/DDtX5qtv/two.png" href="https://ecosup-commerce.fr/decrocher-contrat-alternance-3-etapes-cles-pour-reussir" alt="Décrochez son contrat d'alternance : 3 étapes clés pour réussir"/>
