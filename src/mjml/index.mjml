@@ -156,11 +156,7 @@
         <mj-text padding="5px 0" mj-class="T10-300 c" font-style="italic">Source : L'Étudiant</mj-text>
       </mj-column>
     </mj-section>
-    <mj-section background-color="#dce6ef" padding-bottom="40px" padding="20px 17px" direction="rtl"> 
-      <mj-column width="100%" padding="8px">
-        <mj-divider></mj-divider>
-        <mj-text padding="0" mj-class="H28-300 cO">Salon et Journées Portes Ouvertes</mj-text>
-      </mj-column>
+    <mj-section background-color="#dce6ef" padding="20px 17px">
       <mj-group width="100%">
         <mj-column width="33.333333%" padding="8px">
           <mj-image padding="0" fluid-on-mobile="true" width="300px" src="https://i.ibb.co/9HcxgMyL/af-Etudiants032025.png" alt="Affiche du salon de l'Etudiant Formations et recrutement en alternance les vendredi 21 et samedi 22 mars"/>
@@ -173,7 +169,7 @@
         </mj-column>
       </mj-group>
     </mj-section>
-    <mj-section background-color="#dce6ef">
+    <mj-section>
       <mj-column width="480px">
         <mj-image padding="0" border="none" width="150px" src="https://img.mailinblue.com/3403292/images/content_library/original/65ffed0f9d8a3bdbe17813ef.png" alt="Logo Ecosup-Campus"/>
         <mj-text padding-top="0" padding-bottom="0" align="center" mj-class="T12-300 c"><a style="text-decoration:none;color:#455462" href="https://www.google.com/maps/@50.72132372645463,3.1568485683426477?ll=50.72132372645463,3.1568485683426477&amp;z=12&amp;q=Ecosup+Campus">17 Place Charles et Albert Roussel</a></mj-text>
