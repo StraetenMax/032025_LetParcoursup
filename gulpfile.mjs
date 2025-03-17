@@ -17,7 +17,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Fonction asynchrone pour charger les configurations JSON5
-const loadConfigs = async () => {
+/*const loadConfigs = async () => {
   try {
     const dataPartenaires = JSON5.parse(await fs.readFile('./src/includes/dataPartenaires.json5', 'utf8'));
     const mjmlConfig = JSON5.parse(await fs.readFile('.mjmlConfig.json5', 'utf8'));
@@ -27,7 +27,7 @@ const loadConfigs = async () => {
     console.error(`Failed to load configurations from ${filePath}:`, error);
     throw new Error('Failed to load configurations');
   }
-};
+};*/
 
 // Tâche pour supprimer les attributs style
 const removeEmptyStyles = () => {
@@ -82,7 +82,7 @@ const cleanDist = () => {
 };
 
 // Pug vers Mjml
-const pugToMjml = async () => {
+/*const pugToMjml = async () => {
     const data = await loadConfigs();
     const dataPartenaires = data.dataPartenaires;
     // Vérifiez que dataHotellerie est bien définie
@@ -112,32 +112,45 @@ const pugToMjml = async () => {
         }))
         .pipe(rename({ extname: '.mjml' }))
         .pipe(gulp.dest('./src/mjml'));
+};*/
+const pugToMjml = () => {
+    return gulp.src('./src/*.pug')
+        .pipe(pug({
+            pretty: true, // À retirer pour la production
+            debug: false, // À retirer pour la production
+            compileDebug: false,
+            globals: [],
+            self: false,
+        }))
+        .pipe(rename({ extname: '.mjml' }))
+        .pipe(gulp.dest('./src/mjml'));
 };
 
 // Mjml vers HTML
-const mjmlToHtml = async () => {
-    const config = await loadConfigs();
+const mjmlToHtml = () => {
+//const mjmlToHtml = async () => {
+    //const config = await loadConfigs();
     return gulp.src('./src/mjml/*.mjml')
     .pipe(through2.obj((file, _, cb) => {
-        try {
+        //try {
             const mjmlContent = file.contents.toString();
             const result = mjml(mjmlContent, {
-                ...config.mjmlOptions,
-                filePath: file.path // Ajout du chemin du fichier pour les imports relatifs
+               // ...config.mjmlOptions,
+              //  filePath: file.path // Ajout du chemin du fichier pour les imports relatifs
             });
             
-            if (result.errors && result.errors.length) {
+           /* if (result.errors && result.errors.length) {
                 console.error('MJML Errors:', result.errors);
                 return cb(new Error('MJML compilation failed'));
-            }
+            }*/
             
             file.contents = Buffer.from(result.html);
             cb(null, file);
-        } catch (error) {
+       /* } catch (error) {
             console.error('Erreur dans le fichier:', file.path);
             console.error(error.message);
             cb(error);
-        }
+        }*/
     }))
     .pipe(rename({ extname: '.html' }))
     .pipe(removeEmptyStyles())

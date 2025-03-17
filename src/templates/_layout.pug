@@ -1,0 +1,66 @@
+mjml
+    mj-head
+        mj-title Ecosup Commerce 032025
+        mj-font(name='Roboto' href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')/
+        mj-raw.
+            <meta name="color-scheme" content="light"/>
+            <meta name="supported-color-schemes" content="light"/>
+             <meta name="format-detection" content="telephone=no"/>
+            <meta name="format-detection" content="date=no"/>
+            <meta name="format-detection" content="address=no"/>
+            <meta name="format-detection" content="email=no"/>
+        mj-attributes
+            //-font
+            mj-all(font-family='Roboto, Arial, Helvetica, sans-serif')/
+            mj-class(name="H28-300" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="28px" font-weight="300" line-height="30px")/
+            mj-class(name="H20-700" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="20px" font-weight="700" line-height="24px")/
+            mj-class(name="H14-900" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="14px" font-weight="900" line-height="18px")/
+            mj-class(name='T16-400' font-family="Roboto, Arial, Helvetica, sans-serif" font-size='16px' font-weight='400' line-height='20px')/
+            mj-class(name='T16-300' font-family="Roboto, Arial, Helvetica, sans-serif" font-size='16px' font-weight='300' line-height='20px')/
+            mj-class(name='T12-300' font-family="Roboto, Arial, Helvetica, sans-serif" font-size='12px' font-weight='300' line-height='16px')/
+            mj-class(name='T10-300' font-family="Roboto, Arial, Helvetica, sans-serif" font-size='10px' font-weight='300' line-height='14px')/
+            mj-class(name="LP14-700" font-family="Roboto, Arial, Helvetica, sans-serif" font-size="14px" font-weight="700" line-height="18px")/
+            //-color
+            mj-class(name='c' color='#455462')/
+            mj-class(name='cB' color='#2D3748')/
+            mj-class(name='cOF' color="#AA3E17")/
+            mj-class(name="cO" color="#EC6608")/
+            mj-spacer(height="0")/
+        mj-breakpoint(width="480px")
+        mj-style.   
+            @media(max-width: 480px){
+                .espace{
+                    height: 50px !important;
+                }
+            }
+            
+    mj-body(background-color='#edf2f7')
+        //- content
+        block content
+        //- header
+        block header
+            include ../includes/_header
+        //- edito
+        block edito
+            include ../includes/_edito
+        //- article
+        block article
+            include ../includes/_article
+        //- article02
+        block article02
+            include ../includes/_article02
+        //- article01
+        block article01
+            include ../includes/_article01
+        //- agenda
+        block agenda
+            include ../includes/_agenda
+        //- réseaux sociaux
+            block resociaux
+            include ../includes/_resociaux
+        //- adresse
+        block adresse
+            include ../includes/_adresse
+        //- reglement
+        block reglement
+            include ../includes/_reglement
