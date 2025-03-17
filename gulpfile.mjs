@@ -17,17 +17,17 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Fonction asynchrone pour charger les configurations JSON5
-/*const loadConfigs = async () => {
+const loadConfigs = async () => {
   try {
-    const dataPartenaires = JSON5.parse(await fs.readFile('./src/includes/dataPartenaires.json5', 'utf8'));
+    const dataAgenda = JSON5.parse(await fs.readFile('./src/includes/dataAgenda.json5', 'utf8'));
     const mjmlConfig = JSON5.parse(await fs.readFile('.mjmlConfig.json5', 'utf8'));
-    return {dataPartenaires, mjmlConfig };
+    return {dataAgenda, mjmlConfig };
   } catch (error) {
     console.error('Error loading configs:', error);
     console.error(`Failed to load configurations from ${filePath}:`, error);
     throw new Error('Failed to load configurations');
   }
-};*/
+};
 
 // Tâche pour supprimer les attributs style
 const removeEmptyStyles = () => {
@@ -82,40 +82,22 @@ const cleanDist = () => {
 };
 
 // Pug vers Mjml
-/*const pugToMjml = async () => {
+const pugToMjml = async () => {
     const data = await loadConfigs();
-    const dataPartenaires = data.dataPartenaires;
-    // Vérifiez que dataHotellerie est bien définie
-    if (!dataPartenaires) {
-        throw new Error('dataParenaires is not defined. Check the loadConfigs function.');
+    const dataAgenda = data.dataAgenda;
+    // Vérifiez que dataAgenda est bien définie
+    if (!dataAgenda) {
+        throw new Error('dataAgenda is not defined. Check the loadConfigs function.');
     }
-    console.log('Data loaded:', dataPartenaires);
-    // Déclarez vos listes de logos ici
-    const logosList1 = dataPartenaires.logosList1 || [];
-    const logosList2 = dataPartenaires.logosList2 || [];
-    const logosList3 = dataPartenaires.logosList3 || [];
-    const logosList4 = dataPartenaires.logosList4 || [];
+    console.log('Data loaded:', dataAgenda);
+    // Déclarez vos listes d'affiches ici
+    const affichesList = dataAgenda.logosList1 || [];
     return gulp.src('./src/*.pug')
         .pipe(pug({
             locals: {
-                logosList1,
-                logosList2,
-                logosList3,
-                logosList4,
-                ...dataPartenaires // Passez les données JSON au template Pug
+                affichesList,
+                ...dataAgenda // Passez les données JSON au template Pug
             },
-            pretty: true, // À retirer pour la production
-            debug: false, // À retirer pour la production
-            compileDebug: false,
-            globals: [],
-            self: false,
-        }))
-        .pipe(rename({ extname: '.mjml' }))
-        .pipe(gulp.dest('./src/mjml'));
-};*/
-const pugToMjml = () => {
-    return gulp.src('./src/*.pug')
-        .pipe(pug({
             pretty: true, // À retirer pour la production
             debug: false, // À retirer pour la production
             compileDebug: false,
@@ -127,30 +109,29 @@ const pugToMjml = () => {
 };
 
 // Mjml vers HTML
-const mjmlToHtml = () => {
-//const mjmlToHtml = async () => {
-    //const config = await loadConfigs();
+const mjmlToHtml = async () => {
+    const config = await loadConfigs();
     return gulp.src('./src/mjml/*.mjml')
     .pipe(through2.obj((file, _, cb) => {
-        //try {
+        try {
             const mjmlContent = file.contents.toString();
             const result = mjml(mjmlContent, {
-               // ...config.mjmlOptions,
-              //  filePath: file.path // Ajout du chemin du fichier pour les imports relatifs
+               ...config.mjmlOptions,
+               filePath: file.path // Ajout du chemin du fichier pour les imports relatifs
             });
             
-           /* if (result.errors && result.errors.length) {
+           if (result.errors && result.errors.length) {
                 console.error('MJML Errors:', result.errors);
                 return cb(new Error('MJML compilation failed'));
-            }*/
+            }
             
             file.contents = Buffer.from(result.html);
             cb(null, file);
-       /* } catch (error) {
+        } catch (error) {
             console.error('Erreur dans le fichier:', file.path);
             console.error(error.message);
             cb(error);
-        }*/
+        }
     }))
     .pipe(rename({ extname: '.html' }))
     .pipe(removeEmptyStyles())

@@ -1,0 +1,16 @@
+{
+  "affichesList": [
+        {
+            "image": "https://i.ibb.co/9HcxgMyL/af-Etudiants032025.png",
+            "alt": "Affiche du salon de l'Etudiant Formations et recrutement en alternance les vendredi 21 et samedi 22 mars"
+        },
+        {
+            "image":"https://i.ibb.co/JFrhSZBP/af-Jpo032025.png",
+            "alt":"Affiche de la journée Portes Ouvertes du samedi 29 Mars de 9h30 à 13h"
+        },
+        {
+            "image":"https://i.ibb.co/dJx4cRPn/af-Job-Dating032025.png",
+            "alt":"Affiche du jobDating spécial Assurance et Banque du jeudi 17 avril 2025 de 14h à 17h30"
+        }
+  ]
+}
