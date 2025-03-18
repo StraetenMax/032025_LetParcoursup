@@ -6,7 +6,7 @@
     <mj-raw>
       <meta name="color-scheme" content="light"/>
       <meta name="supported-color-schemes" content="light"/>
-       <meta name="format-detection" content="telephone=no"/>
+      <meta name="format-detection" content="telephone=no"/>
       <meta name="format-detection" content="date=no"/>
       <meta name="format-detection" content="address=no"/>
       <meta name="format-detection" content="email=no"/>
@@ -28,6 +28,15 @@
       <mj-class name="cOF" color="#0e1f89"/>
       <mj-class name="cO" color="#c21718"/>
       <mj-spacer height="0"/>
+      <mj-style>
+        @media only screen and (max-width: 480px) {
+            .img-class{
+                width: 100% !important;
+                height: auto !important;
+                background-color: #00000 !important;
+            }
+        }
+      </mj-style>
     </mj-attributes>
     <mj-breakpoint width="480px"></mj-breakpoint>
   </mj-head>
@@ -43,8 +52,8 @@
           </tr>
         </mj-table>
       </mj-column>
-      <mj-column width="60%" vertical-align="middle">
-        <mj-image padding="0" align="center" fluid-on-mobile="true" width="600px" src="https://i.ibb.co/sp7Vmzny/header01.png" alt="Groupe d'étudiants entrain d'échanger, de s'amuser... un moment de convivialité."></mj-image>
+      <mj-column width="60%" vertical-align="middle" css-class="img-class">
+        <mj-image padding="0" align="center" fluid-on-mobile="true" width="600px" css-class="img-class" src="https://i.ibb.co/sp7Vmzny/header01.png" alt="Groupe d'étudiants entrain d'échanger, de s'amuser... un moment de convivialité."></mj-image>
       </mj-column>
     </mj-section>
     <mj-section padding="30px 17px" padding-bottom="0">
