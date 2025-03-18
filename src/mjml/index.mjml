@@ -44,7 +44,7 @@
   </mj-head>
   <mj-body background-color="#edf2f7">
     <mj-section background-color="#dce6ef" padding="0px">
-      <mj-column width="40%" vertical-align="middle">
+      <mj-column width="40%" vertical-align="middle" padding="0px">
         <mj-image align="center" width="200px" src="https://img.mailinblue.com/3403292/images/content_library/original/65ffed0f9d8a3bdbe17813ef.png" alt="logo Ecosup Campus"/>
         <mj-text align="center" container-background-color="#c21718" mj-class="T16-400" color="#ffffff">Newsletter / <span style="font-weight:700;color:#ffffff">Mars 2025</span></mj-text>
         <mj-table cellpadding="0" cellspacing="0" align="center">
@@ -54,7 +54,7 @@
           </tr>
         </mj-table>
       </mj-column>
-      <mj-column width="60%" vertical-align="middle" css-class="img-class">
+      <mj-column width="60%" vertical-align="middle" css-class="img-class" padding="0px">
         <mj-image padding="0px" align="center" fluid-on-mobile="true" width="600px" css-class="img-class" src="https://i.ibb.co/sp7Vmzny/header01.png" alt="Groupe d'étudiants entrain d'échanger, de s'amuser... un moment de convivialité."></mj-image>
       </mj-column>
     </mj-section>
