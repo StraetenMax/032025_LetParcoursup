@@ -29,16 +29,6 @@ mjml
             mj-class(name='cOF' color="#0e1f89")/
             mj-class(name="cO" color="#c21718")/
             mj-spacer(height="0")/
-            mj-style.
-                @media only screen and (max-width: 480px) {
-                    .img-class{
-                        width: 100% !important;
-                        height: auto !important;
-                        background-color: #00000 !important;
-                        padding: 0px !important;
-                        margin: 0px !important; 
-                    }
-                }
         mj-breakpoint(width="480px")
     mj-body(background-color='#edf2f7')
         //- content
@@ -49,15 +39,15 @@ mjml
         //- edito
         block edito
             include ../includes/_edito
-        //- article02
-        block article02
-            include ../includes/_article02
-        //- article
-        block article
-            include ../includes/_article
-        //- article01
+        //- calendrier
         block article01
             include ../includes/_article01
+        //- Parcoursup
+        block article02
+            include ../includes/_article02
+        //- lettre recommandation
+        block article
+            include ../includes/_article
         //- agenda
         block agenda
             include ../includes/_agenda
