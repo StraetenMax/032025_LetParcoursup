@@ -27,6 +27,7 @@
       <mj-class name="cB" color="#2D3748"/>
       <mj-class name="cOF" color="#0e1f89"/>
       <mj-class name="cO" color="#c21718"/>
+      <mj-class name="cbg" background-color="#edf2f7"> </mj-class>
       <mj-spacer height="0"/>
     </mj-attributes>
     <mj-breakpoint width="480px"></mj-breakpoint>
@@ -111,7 +112,7 @@
           <mj-text padding="2.5px 10px" container-background-color="#edf2f7" mj-class="T16-300 c"><span style="color:#c21718;">&#9632;</span> Ajoutez les pièces complémentaires demandées par certaines formations,</mj-text>
           <mj-text padding="2.5px 10px 10px 10px" container-background-color="#edf2f7" mj-class="T16-700 cB"><span style="color:#c21718;">&#9632;</span> Confirmez vos vœux pour qu'ils soient transmis aux établissements,</mj-text>
           <mj-text padding="5px 0" mj-class="T10-300 c" font-style="italic">Source : Parcoursup - Guide officiel 2024</mj-text>
-          <mj-text align="right" mj-class="LP14-700"><a href="https://www.parcoursup.gouv.fr/candidater-sur-parcoursup/nos-conseils-pour-completer-votre-dossier-et-confirmer-vos-voeux-1631" style="color:#C21718;text-decoration:none;" target="_blank">En savoir plus...</a></mj-text>
+          <mj-button align="right" mj-class="LP14-700 cbg"><a href="https://www.parcoursup.gouv.fr/candidater-sur-parcoursup/nos-conseils-pour-completer-votre-dossier-et-confirmer-vos-voeux-1631" style="color:#C21718;text-decoration:none;" target="_blank">En savoir plus...</a></mj-button>
         </mj-column>
       </mj-section>
     </mj-wrapper>
@@ -126,7 +127,7 @@
           <mj-text padding="5px 0" mj-class="T16-300 c">Pour faire la différence sur <span style="font-weight:700;color:#2D3748;">Parcoursup</span>, une <span style="font-weight:700;color:#2D3748;">lettre de recommandation</span> peut être un véritable atout. Elle permet de mettre en valeur vos qualités, votre engagement et votre sérieux à travers le regard d'un enseignant ou d'un professionnel.</mj-text>
           <mj-text padding="5px 0" mj-class="T16-300 c">Comment bien la demander&nbsp;? À qui s'adresser&nbsp;? Quels éléments doivent y figurer&nbsp;?</mj-text>
           <mj-text padding="5px 0" mj-class="T16-300 c"><span style="font-weight:700;color:#2D3748">EcoSup Campus vous explique tout&nbsp;!</span></mj-text>
-          <mj-text align="right" mj-class="LP14-700 cO"><a href="https://ecosup-assurance.fr/lettre-de-recommandation-ptit-plus-parcoursup" style="color:#c21718;text-decoration:none;" target="_blank">Lire l'article...</a></mj-text>
+          <mj-button align="right" mj-class="LP14-700 cO cbg"><a href="https://ecosup-assurance.fr/lettre-de-recommandation-ptit-plus-parcoursup" style="color:#c21718;text-decoration:none;" target="_blank">Lire l'article...</a></mj-button>
         </mj-column>
       </mj-section>
     </mj-wrapper>
