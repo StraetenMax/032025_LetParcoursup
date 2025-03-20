@@ -138,7 +138,13 @@
           <mj-image padding="0" fluid-on-mobile="true" width="300px" src="https://i.ibb.co/JFrhSZBP/af-Jpo032025.png" alt="Affiche de la journée Portes Ouvertes du samedi 29 Mars de 9h30 à 13h"/>
         </mj-column>
         <mj-column width="33.333333%" padding="8px">
+          <mj-image padding="0" fluid-on-mobile="true" width="300px" src="https://i.ibb.co/dJx4cRPn/af-Job-Dating032025.png" alt="Affiche du jobDating spécial Tourisme et Hôtellerie du mardi 15 avril 2025 de 14h à 17h30"/>
+        </mj-column>
+        <mj-column width="33.333333%" padding="8px">
           <mj-image padding="0" fluid-on-mobile="true" width="300px" src="https://i.ibb.co/dJx4cRPn/af-Job-Dating032025.png" alt="Affiche du jobDating spécial Assurance et Banque du jeudi 17 avril 2025 de 14h à 17h30"/>
+        </mj-column>
+        <mj-column width="33.333333%" padding="8px">
+          <mj-image padding="0" fluid-on-mobile="true" width="300px" src="https://i.ibb.co/dJx4cRPn/af-Job-Dating032025.png" alt="Affiche du jobDating spécial Commerce et Immobilier du jeudi 17 avril 2025 de 14h à 17h30"/>
         </mj-column>
       </mj-group>
     </mj-section>
