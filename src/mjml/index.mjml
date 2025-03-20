@@ -81,8 +81,7 @@
       <mj-column width="50%" padding="8px">
         <mj-divider></mj-divider>
         <mj-text padding="5px 0" align="left" mj-class="H28-300 cO">Parcoursup 2025&nbsp;: le calendrier</mj-text>
-        <mj-text padding="5px 0" mj-class="T16-300 c">Découvrez avec ce document de notre partenaire "L'Etudiant", les grandes dates et étapes qui rythment la procédure <span style="font-weight:700;color:#2D3748;">Parcoursup</span>. À vos agendas et à vos validations pour la prochaine étape... <span style="font-weight:700;color:#2D3748;">Ecosup Campus vous accompagne&nbsp;!</span></mj-text>
-        <mj-text padding="5px 0" mj-class="T10-300 c" font-style="italic">Source : L'Étudiant</mj-text>
+        <mj-text padding="5px 0" mj-class="T16-300 c">Découvrez avec ce graphique, les grandes dates et étapes qui rythment la procédure <span style="font-weight:700;color:#2D3748;">Parcoursup</span>. À vos agendas et à vos validations pour la prochaine étape... <span style="font-weight:700;color:#2D3748;">Ecosup Campus vous accompagne&nbsp;!</span></mj-text>
       </mj-column>
     </mj-section>
     <mj-wrapper padding="20px 17px">
